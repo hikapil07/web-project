@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-size: 12px;
+    color: #023023;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    min-height: calc(100vh - 120px);
+}
+header {
+    height: 70px;
+    /* background-color: #0fc690; */
+    background-color: #fff;
+    background-color: #023023;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.15);
+}
+header .container {
+    display: flex;
+    flex-direction: row;
+}
+header .container .logo-container img {
+    max-height: 60px;
+    width: auto;
+    margin: 5px 0;
+}
+header .container .menu-container {
+    flex: 1;
+}
+header .container .menu-container .responsive-menu {
+    position: relative;
+    height: 100%;
+}
+header .container .menu-container .responsive-menu .burger-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background: #ffffff;
+    height: 6px;
+    width: 50px;
+}
+header .container .menu-container .responsive-menu .burger-icon:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: -15px;
+    background: #ffffff;
+    height: 6px;
+    width: 35px;
+    transition: all .5s ease;
+}
+header .container .menu-container .responsive-menu .burger-icon:after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #ffffff;
+    height: 6px;
+    width: 30px;
+    transition: all .5s ease;
+}
+header .container .menu-container .responsive-menu .burger-icon.close-icon {
+    background: transparent;
+}
+header .container .menu-container .responsive-menu .burger-icon.close-icon:before {
+    width: 35px;
+    transform: rotate(45deg);
+    top: 0px;
+    right: -4px;
+}
+header .container .menu-container .responsive-menu .burger-icon.close-icon::after {
+    transform: rotate(-45deg);
+    top:0;
+}
+header .container .menu-container ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+header .container .menu-container ul li {
+    font-weight: 500;
+    margin-right: 50px ;
+}
+header .container .menu-container ul li a {
+    color: #fff;
+}
+header .container .menu-container ul li a:hover {
+    text-decoration: underline;
+}
+header .container .user-options {
+    display: flex;
+    align-items: center;
+}
+header .container .user-options input {
+    background: rgba(255,255,255,0.9);
+    height: 28px;
+    border-style: none;
+    border-radius: 3px;
+    padding: 0 3px;
+    outline: none;
+}
+header .container .user-options i {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 15px;
+}
+footer {
+    background-color: #023023;
+    height: 50px;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100%;
+    font-size: 14px;
+}
