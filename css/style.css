@@ -118,3 +118,22 @@ footer .container {
     height: 100%;
     font-size: 14px;
 }
+
+.cat-block {
+    height: 200px;
+
+}
+.cat-block .cat-img {
+    height: 150px;
+    text-align: center;
+}
+.cat-block .cat-img img {
+    max-height: 75%;
+}
+.cat-block .cat-name {
+    text-align: center;
+}
+.brand-img {
+    height: 100px;
+    width: 100%;
+}
