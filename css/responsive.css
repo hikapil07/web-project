@@ -12,6 +12,7 @@
         height: 0px;
         transition: all .5s ease;
         /* opacity: 0; */
+        z-index: 99;
     }
     header .container .menu-container .main-menu.menu-open {
         height: 100%;

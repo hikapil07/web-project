@@ -6,7 +6,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 main {
-    min-height: calc(100vh - 120px);
+    height: calc(100vh - 120px);
+    overflow: auto;
 }
 header {
     height: 70px;
@@ -135,5 +136,5 @@ footer .container {
 }
 .brand-img {
     height: 100px;
-    width: 100%;
+    width: 210px;
 }
